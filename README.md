@@ -17,6 +17,8 @@ For a development this game, i was inspired by Snes and Mega Drive plataform gam
 
 -Traps;
 
+-Stage Select;
+
 -Boss Battle;
 
 
