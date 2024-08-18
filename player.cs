@@ -6,41 +6,47 @@ using UnityEngine.SceneManagement;
 public class player : MonoBehaviour
 {
     
-    private Animator        PA;
-    private Rigidbody2D     rig;
-    private SpriteRenderer  srP;
-    private float           Speed = 5f;
-    private float           moveX;
-    private float           moveY;
-    public  Vector2         direction = Vector2.right;
-    private float           jumpForce = 10f;
-    public  bool            Jump = false;
-    private int             numeroPulos = 0;
-    private int             maxPulos = 2;
-    public  bool            isGrounded;
-    public  Transform       GroundCheck;
-    public  bool            facingRight;
-    private bool            iFrames;
-    private ControllerGame  _controlGame;
-    private ControllerFade  _instanciaFade;
-    private BossController  _bossController;
-    private StageSelect     _stageSelect;
-    private FimFase         _fimFase;
-    public  AudioSource     JumpFX;
-    public  AudioClip       fxPulo;
-    public  Color           hitColor;
-    public  Color           noHitColor;
-    public  GameObject      playerDie;
-    private int             vidas = 3;
-    public  ParticleSystem  poeira;
-    public  bool            isClimbing;
-    private float           velClimb = 3f;
-    private bool            win;
-    
-    
-    
-    
-    // Start is called before the first frame update
+[Header("Componentes")]
+private Animator        PA;
+private Rigidbody2D     rig;
+private SpriteRenderer  srP;
+private ControllerGame  _controlGame;
+private ControllerFade  _instanciaFade;
+private BossController  _bossController;
+private StageSelect     _stageSelect;
+private FimFase         _fimFase;
+
+[Header("Movimentos")]
+public  float           Speed = 5f;
+private float           moveX;
+private float           moveY;
+private Vector2         direction = Vector2.right;
+private float           jumpForce = 10f;
+public  bool            Jump = false;
+private int             numeroPulos = 0;
+private int             maxPulos = 2;
+public  bool            isGrounded;
+public  Transform       GroundCheck;
+public  bool            facingRight;
+private bool            iFrames;
+private bool            win;
+public  bool            isClimbing;
+private float           velClimb = 3f;
+
+[Header("Checkpoint e Vida")]
+private int             vidas = 3;
+public  GameObject      playerDie;
+public  Transform       checkPoint;
+private bool            isCheckPoint;
+private Vector2         checkPointPos;
+
+[Header("Efeitos Visuais e Sonoros")]
+public  ParticleSystem  poeira;
+public  AudioSource     JumpFX;
+public  AudioClip       fxPulo;
+public  Color           hitColor;
+public  Color           noHitColor;
+
     
     void Awake(){
         
