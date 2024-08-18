@@ -7,16 +7,22 @@ using UnityEngine.SceneManagement;
 
 public class ControllerFade : MonoBehaviour
 {
-    public static ControllerFade    _instanciaFade;
-    private FimFase                  _FimFase; 
-    public Image                    _imagemFade;
-    public Color                    _corInicial;
-    public Color                    _corFinal;
-    public Color                    _corInicial2;
-    public Color                    _corFinal2;
-    public float                    _duracaoFade;
-    public bool                     _isFade;
-    private float                    _tempo;
+[Header("Componentes")]
+public static ControllerFade  _instanciaFade;
+private FimFase               _FimFase; 
+public Image                  _imagemFade;
+
+[Header("Cores do Fade")]
+public Color                  _corInicial;
+public Color                  _corFinal;
+public Color                  _corInicial2;
+public Color                  _corFinal2;
+
+[Header("Configurações do Fade")]
+public float                  _duracaoFade;
+public bool                   _isFade;
+private float                 _tempo;
+
     
     // Start is called before the first frame update
     void Awake()
