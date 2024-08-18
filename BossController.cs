@@ -8,26 +8,36 @@ using UnityEngine.UI;
 public class BossController : MonoBehaviour
 {
     
-    private SpriteRenderer  sprite;
-    private Animator        PA;
-    public  Transform       enemie;
-    public  Transform       player;
-    public  GameObject      bee;
-    private bool            beeActivated = false;
-    public  GameObject      bee2;
-    public  GameObject      BossHit;
-    public  GameObject      BossDie;
-    public  GameObject      flag;
-    public  bool            facingRight;
-    public  float           speed = 5f;
-    private ControllerGame  _controllerGame;
-    public  AudioSource     JumpFX;
-    private float           detectionRange = 20f;
-    private float           attackRange = 2f;
-    public  bool            isPlayerRange = false;
-    private int             vidas = 3;
-    private bool            isHit = false;
-    private bool            iFrames;
+[Header("Componentes")]
+private SpriteRenderer  sprite;
+private Animator        PA;
+private ControllerGame  _controllerGame;
+
+[Header("Alvos e Referências")]
+public  Transform       enemie;
+public  Transform       player;
+public  GameObject      bee;
+public  GameObject      bee2;
+public  GameObject      BossHit;
+public  GameObject      BossDie;
+public  GameObject      flag;
+
+[Header("Movimentação e Status")]
+public  float           speed = 5f;
+public  bool            facingRight;
+private bool            beeActivated = false;
+private bool            iFrames;
+private bool            isHit = false;
+private int             vidas = 3;
+
+[Header("Detecção e Ataque")]
+private float           detectionRange = 20f;
+private float           attackRange = 2f;
+public  bool            isPlayerRange = false;
+
+[Header("Efeitos Sonoros")]
+public  AudioSource     JumpFX;
+
     
     
     // Start is called before the first frame update
