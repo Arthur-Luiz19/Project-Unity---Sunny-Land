@@ -5,10 +5,16 @@ using UnityEngine;
 public class Elevador : MonoBehaviour
 {
    
-   public   Transform   pontoA, pontoB, Plataforma;
-   public   float       Velocidade = 5f;
-   private  Vector3     Destino;
-   public   GameObject  Player;
+[Header("Componentes e Referências")]
+public GameObject Player;
+public Transform  pontoA;
+public Transform  pontoB;
+public Transform  Plataforma;
+
+[Header("Configurações de Movimento")]
+public float      Velocidade = 5f;
+private Vector3   Destino;
+
 
     // Start is called before the first frame update
     void Start()
