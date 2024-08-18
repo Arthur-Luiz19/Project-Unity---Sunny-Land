@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class BeeController : MonoBehaviour
 {
-    public  Transform       enemie;
-    public  Transform[]     Position;
-    private SpriteRenderer  beeSprite;
-    private int             IdTarget;
-    public  bool            facingRight;
-    public  bool            shouldFlip;
-    private float           speed = 5f;
+
+[Header("Componentes")]
+private SpriteRenderer  beeSprite;
+
+[Header("Movimentação")]
+private float           speed = 5f;
+private int             IdTarget;
+public  bool            facingRight;
+public  bool            shouldFlip;
+
+[Header("Posições e Alvos")]
+public  Transform       enemie;
+public  Transform[]     Position;
+
     
     // Start is called before the first frame update
     void Start()
