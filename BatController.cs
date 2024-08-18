@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class BatController : MonoBehaviour
 {
-    public  Transform       enemie;
-    public  Transform []    Position;
-    public  float           Speed = 6f;
-    private SpriteRenderer  batSprite;
-    private int             IdTarget;
-    public  bool            facingRight;
 
+[Header("Componentes")]
+private SpriteRenderer  batSprite;
 
+[Header("Movimentação")]
+public  float           Speed = 6f;
+private int             IdTarget;
+public  bool            facingRight;
 
+[Header("Posições e Alvos")]
+public  Transform       enemie;
+public  Transform[]     Position;
     
-    // Start is called before the first frame update
+
     void Start()
     {
         batSprite = enemie.gameObject.GetComponent<SpriteRenderer>();
