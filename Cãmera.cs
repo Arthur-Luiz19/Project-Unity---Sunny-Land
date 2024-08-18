@@ -5,17 +5,21 @@ using UnityEngine;
 public class Cãmera : MonoBehaviour
 {
     
-    
-    public float offsetX = 3f;
-    public float smooth = 0.1f;
-    public float limitedUp = 2f;
-    public float limitedDown = 0f;
-    public float limitedLeft = 0f;
-    public float limitedRight = 100f;
+[Header("Configurações de Movimentação")]
+public float offsetX = 3f;
+public float smooth = 0.1f;
 
-    private Transform player;
-    private float playerX;
-    private float playerY;
+[Header("Limites de Movimento")]
+public float limitedUp = 2f;
+public float limitedDown = 0f;
+public float limitedLeft = 0f;
+public float limitedRight = 100f;
+
+[Header("Referências do Player")]
+private Transform player;
+private float playerX;
+private float playerY;
+
     // Start is called before the first frame update
     void Start()
     {
