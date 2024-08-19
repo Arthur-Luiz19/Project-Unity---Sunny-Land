@@ -5,13 +5,21 @@ using UnityEngine;
 public class SkullController : MonoBehaviour
 {
    
-   public   Transform         enemie;
-   private  SpriteRenderer    Skull;
-   public   Transform         Player;
-   public   float             Speed = 2f;
-   public   bool              facingRight;
-   public   float             detectionRange = 10f;
-   private  bool              isPlayerRange = false;
+[Header("Referências")]
+public  Transform         enemie;
+public  Transform         Player;
+
+[Header("Configurações de Movimento")]
+public  float             Speed = 2f;
+public  bool              facingRight;
+
+[Header("Configurações de Detecção")]
+public  float             detectionRange = 10f;
+private bool             isPlayerRange = false;
+
+[Header("Componentes")]
+private SpriteRenderer    Skull;
+
    
    
    
