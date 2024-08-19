@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class RatController : MonoBehaviour
 {
-    public  Transform       enemie;
-    public  Transform       Player;
-    public  Transform[]     Posicao;
-    private int             IdTarget;
-    private SpriteRenderer  ratSprite;
-    public  float           speed = 3f;
-    public  bool            facingRight;
-    private bool            isPlayerRange = false;
-    public  float           detectionRange = 10f; 
+[Header("Referências")]
+public  Transform       enemie;
+public  Transform       Player;
+public  Transform[]     Posicao;
+
+[Header("Configurações de Movimento")]
+public  float           speed = 3f;
+public  bool            facingRight;
+
+[Header("Configurações de Detecção")]
+public  float           detectionRange = 10f;
+private bool           isPlayerRange = false;
+
+[Header("Componentes")]
+private int             IdTarget;
+private SpriteRenderer  ratSprite;
     
     // Start is called before the first frame update
     void Start()
