@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class PlantaController : MonoBehaviour
 {
-    private SpriteRenderer  sprite;
-    private Animator        PA;
-    public  Transform       planta;
-    public  Transform       player;
-    private float           attackRange = 3f;
-    private bool            isPlayerRange = false;
+[Header("Componentes")]
+private SpriteRenderer  sprite;
+private Animator        PA;
+
+[Header("Referências")]
+public  Transform       planta;
+public  Transform       player;
+
+[Header("Configurações de Ataque")]
+private float           attackRange = 3f;
+private bool            isPlayerRange = false;
+
     
     // Start is called before the first frame update
     void Start()
