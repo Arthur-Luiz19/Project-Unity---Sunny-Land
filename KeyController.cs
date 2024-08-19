@@ -5,11 +5,17 @@ using UnityEngine;
 public class KeyController : MonoBehaviour
 {
     
-    public  Transform       chave;
-    public  Transform[]     Position;
-    private float           speed = 1f;
-    private int             IdTarget;
-    private SpriteRenderer  keySprite;
+[Header("Referências e Alvos")]
+public  Transform       chave;
+public  Transform[]     Position;
+
+[Header("Configurações de Movimento")]
+private float           speed = 1f;
+
+[Header("Componentes")]
+private int             IdTarget;
+private SpriteRenderer  keySprite;
+
     
 
     // Start is called before the first frame update
