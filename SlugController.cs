@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class SlugController : MonoBehaviour
 {
-    private SpriteRenderer  enemieSprite;
-    private float           Speed = 2.5f;
-    public  bool            facingRight;
-    public  Transform       enemie;
-    public  Transform[]     Position;
-    private int             IdTarget;
+[Header("Referências")]
+public  Transform       enemie;
+public  Transform[]     Position;
+
+[Header("Configurações de Movimento")]
+public  float           Speed = 2.5f;
+public  bool            facingRight;
+
+[Header("Componentes")]
+private SpriteRenderer  enemieSprite;
+private int             IdTarget;
+
     
     // Start is called before the first frame update
     void Start()
