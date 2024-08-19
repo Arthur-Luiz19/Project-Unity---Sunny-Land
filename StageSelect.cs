@@ -6,17 +6,23 @@ using UnityEngine.SceneManagement;
 public class StageSelect : MonoBehaviour
 {
    
-    public  float             cameraSpeed = 10f;
-    private int               IdTarget;
-    private int               IdStage;  
-    private bool[]            stageComplete;
-    public float offsetX = 3f;
-    public float smooth = 0.1f;
-    public float limitedUp = 2f;
-    public float limitedDown = 0f;
-    public float limitedLeft = 0f;
-    public float limitedRight = 100f;
-    public Transform player;
+[Header("Configurações da Câmera")]
+public float cameraSpeed = 10f;
+public float offsetX = 3f;
+public float smooth = 0.1f;
+public float limitedUp = 2f;
+public float limitedDown = 0f;
+public float limitedLeft = 0f;
+public float limitedRight = 100f;
+
+[Header("Referências")]
+public Transform player;
+
+[Header("Dados de Estágio")]
+private int               IdTarget;
+private int               IdStage;
+private bool[]            stageComplete;
+
 
      
     
