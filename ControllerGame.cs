@@ -5,25 +5,27 @@ using UnityEngine.UI;
 
 public class ControllerGame : MonoBehaviour
 {
-    private int         score;
-    private int         key;
-    private int         vidas = 3;
-    public  Text        TextoScore;
-    public  Text        TextKey;
-    public  Text        TextLife;
 
-    public  AudioSource JumpFX;
-    public  AudioClip   fxCenouraColetada;
-    public  AudioClip   fxChave;
-    public  AudioClip   fxExplosão;
-    public  AudioClip   fxDie;
-    public  GameObject  hitExplosão;
-    public  Sprite[]    imagemVidas;
-    public  Image       barraVidas;
-   
-    
+[Header("Pontuação e Vida")]
+private int         score;
+private int         key;
+private int         vidas = 3;
+public  Text        TextoScore;
+public  Text        TextKey;
+public  Text        TextLife;
+public  Sprite[]    imagemVidas;
+public  Image       barraVidas;
 
-    // Start is called before the first frame update
+[Header("Efeitos Sonoros")]
+public  AudioSource JumpFX;
+public  AudioClip   fxCenouraColetada;
+public  AudioClip   fxChave;
+public  AudioClip   fxExplosão;
+public  AudioClip   fxDie;
+
+[Header("Efeitos Visuais")]
+public  GameObject  hitExplosão;
+
     
     public void Pontuacao(int qtdScore){
         score += qtdScore;
