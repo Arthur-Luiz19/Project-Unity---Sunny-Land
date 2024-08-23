@@ -24,5 +24,10 @@ For a development this game, i was inspired by Snes and Mega Drive plataform gam
 
 -Boss Battle;
 
+# Controlls
+Moves: Arrow Keys;
+
+Spacebar: Jump & double Jump.
+
 
 The moment i publish this repository, the game has 3 phases, the last being a boss battle. I took almost 2 mounths to finish this game, it was hard for a rookie one, but i loved developer it, it's served for experience for Work.
